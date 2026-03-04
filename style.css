@@ -1,0 +1,147 @@
+#head {
+  display: flex;
+  align-items: center;
+  background: #ffaaff;
+}
+
+#head nav {
+	position: absolute;
+	right: 20px;
+}
+
+#head nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  margin-right: 30px;
+  font-size: 32px;
+}
+
+#head nav a:hover {
+  color: #ff4d4d;
+}
+
+#head select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-size: 24px;
+  padding: 50px 10px;
+  border: none;
+  background: transparent;
+  font-weight: 500;
+  margin-right: 120px;
+  cursor: pointer;
+  font-size: 45px;
+}
+
+#head select:focus {
+  outline: none;
+}
+
+#head select option {
+  font-size: 32px;
+}
+
+h1 {
+	font-size: 64px;
+	width: calc(100% - 32px);
+	font-family: Arial, sans-serif;
+	padding: 8px;
+	margin: 0;
+}
+
+.icon {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+}
+.text {
+	position: relative;
+	display: flex;
+	width: 318px;
+	padding: 16px;
+	background: #ff9b9b;
+}
+.text h2 {
+	margin: 0;
+	padding: 0;
+	font-weight: 300;
+	font-size: 30px;
+}
+.text label {
+	position: absolute;
+	right: 16px;
+	font-size: 28px;
+	margin-top: 1px;
+}
+.part {
+	background: #b8c379;
+	margin-top: 16px;
+	padding: 16px;
+}
+
+Line {
+	display: flex;
+	width: 100%;
+	max-width: 100%;
+	overflow-x: auto;
+	scrollbar-width: none;
+	gap: 16px;
+}
+
+#responsive {
+  position: absolute;
+  width: calc(100% - 400px);
+  height: 100px;
+  right: 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: flex-end;
+}
+
+#responsive nav {
+  display: flex;
+  gap: 20px;
+}
+
+@media (min-width: 1190px) {
+  #responsive {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+
+footer {
+	display: flex;
+	height: 100px;
+	background-image: url("logo2.png");
+	background-size: cover;
+	align-items: center;
+	padding: 100px;
+	padding-bottom: 42vw;
+	padding-top: 140px;
+}
+footer img {
+	width: 200px;
+	display: inline-block;
+  animation: shake-up 2.5s ease-in-out 1s infinite;
+}
+
+footer label {
+	padding: 50px;
+	font-size: 70px;
+}
+
+@keyframes shake-up {
+  0% { transform: translateY(0) rotate(0deg); }
+  20% { transform: translateY(0) rotate(0deg); }
+  35% { transform: translateY(-10px) rotate(-5deg); }
+  50% { transform: translateY(10px) rotate(5deg); }
+  65% { transform: translateY(-10px) rotate(-5deg); }
+  80% { transform: translateY(0) rotate(0deg); }
+  100% { transform: translateY(0) rotate(0deg); }
+}
